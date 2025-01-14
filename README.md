@@ -6,14 +6,12 @@ Welcome to my portfolio repository! This project showcases my work as a front-en
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **React.js**
-- **Python**
-- **Git/GitHub**
+
 
 ## Features
 - **Responsive Design**: Optimized for desktop and mobile views.
 - **Project Showcase**: Explore my skills and projects.
-- **Contact Form**: Reach out via the 'Get in Touch' section.
+- **Contact Form**: Reach out via the 'CRTL + CONNECT' section.
 
 ## Installation
 To run this portfolio locally, follow these steps:
@@ -25,4 +23,5 @@ To run this portfolio locally, follow these steps:
    2.Navigate to the project folder:
    ```
    cd portfolio
-   
+   ```
+   Open `index.html` in your browser to run the code
