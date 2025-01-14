@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Chauhan - Portfolio</title>
+    <link rel="icon" href="tushar.jpg" />
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Link to external CSS -->
+    <style>
+        .pink {
+            color: pink;
+        }
+        
+        .white {
+            color: white;
+        }
+        
+        .yellow {
+            color: yellow;
+        }
+        
+        .orange {
+            color: orange;
+        }
+        
+        .lightgreen {
+            color: lightgreen;
+        }
+        
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tushar Chauhan Portfolio</h1>
+        <nav>
+            <a href="#aboutt">Home<span></span></a>
+            <a href="#about">About<span></span></a>
+            <a href="#skills">Skills<span></span></a>
+            <a href="#project">Projects<span></span></a>
+            <a href="#contact me">Contact Me<span></span></a>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <!-- About Section -->
+        <section id="aboutt">
+            <h2>Hello,</h2>
+            <p>This is <span class="highlight">Tushar Chauhan</span>,</p>
+            <p>I'm an Aspiring <span class="highlght">Software Developer..</span></p>
+            <div class="social-icons">
+                <a href="https://www.github.com/tusharchauhan89"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tushar-chauhan-54b0ab296/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/TUSHAR7752?t=3vTefSSrm9esuLenkgFNzQ&s=08"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/tushar.chauhan/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Button Links -->
+            <div class="bnn">
+                <a href="#contact me" class="a1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>Contact
+                </a>
+                <a href="https://www.github.com/tusharchauhan89" class="a2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Github
+                </a>
+                <a href="https://drive.google.com/file/d/14c782uSMDUhu-3OjfQfb70-1T0GvEA6z/view?usp=drive_link" class="a3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>Resume
+                </a>
+            </div>
+            <script>
+                let btns = document.querySelectorAll('a');
+                btns.forEach(btn => {
+                    btn.onmousemove = function(e) {
+                        let x = e.pageX - btn.offsetLeft;
+                        let y = e.pageY - btn.offsetTop;
+                        btn.style.setProperty('--x', x + 'px');
+                        btn.style.setProperty('--y', y + 'px');
+                    }
+                })
+            </script>
+
+        </section>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="shloka-card">
+                <pre>
+                    <code>
+<span class="pink">const</span> <span class="white">coder</span> = {
+    <span class="white">name</span>: <span class="yellow">"Tushar Chauhan"</span>,
+    <span class="white">skills</span>: <span class="yellow">["Python", "C", "C++", "HTML",  "JavaScript", "CSS"]</span>,
+
+    <span class="white">hardWorker</span>: <span class="orange">true</span>,
+    <span class="white">quickLearner</span>: <span class="orange">true</span>,
+    <span class="white">problemSolver</span>: <span class="orange">true</span>,
+    <span class="lightgreen">hireable</span>: <span class="blue">function</span>() {
+        <span class="white">return</span> <span class="blue">this</span>.<span class="white">hardWorker</span> <span class="yellow">&amp;&amp;</span> <span class="blue">this</span>.<span class="white">problemSolver</span> <span class="yellow">&amp;&amp;</span> <span class="blue">this</span>.<span class="white">skills.length</span> >= 5;
+    }
+};
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!--  About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>The Man Behind the Screen</h2>
+                <p>Hello! I am <strong>Tushar Chauhan</strong>, a B.Tech Computer Science student who thrives in the world of <span class="highlight">frontend development</span> and <span class="highlight">Python programming</span>. I love to create beautiful
+                    and intuitive web experiences while solving problems using efficient code.</p>
+                <p>My journey started with building simple web pages, but over time, my passion has grown to encompass cutting-edge web technologies and data-driven solutions. I focus on building interactive and scalable applications, and in my spare time,
+                    I contribute to open-source projects and keep refining my skills.</p>
+                <p>I'm always looking for exciting opportunities to collaborate on impactful projects or have conversations with like-minded individuals. Let’s connect and innovate together!</p>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> Frontend Development (HTML, CSS, JavaScript)</li>
+                    <li><i class="fas fa-laptop-code"></i> Python Programming</li>
+                    <li><i class="fas fa-cogs"></i> Problem Solving & Algorithms</li>
+
+                    <li><i class="fas fa-plug"></i> API Integrations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="skills">
+        <h2 class="animated-title">My Technical Toolbox</h2>
+        <div class="skills-container">
+            <div class="skill animated-card">
+                <i class="fab fa-html5 skill-icon animated-icon"></i>
+                <h3>HTML</h3>
+                <p>Master of structure, building the web from the ground up.</p>
+            </div>
+            <div class="skill animated-card">
+                <i class="fab fa-css3-alt skill-icon animated-icon"></i>
+                <h3>CSS</h3>
+                <p>Crafting beautiful designs with a passion for responsive layouts.</p>
+            </div>
+            <div class="skill animated-card">
+                <i class="fab fa-js-square skill-icon animated-icon"></i>
+                <h3>JavaScript</h3>
+                <p>Bringing websites to life with dynamic and interactive elements.</p>
+            </div>
+            <div class="skill animated-card">
+                <i class="fab fa-python skill-icon animated-icon"></i>
+                <h3>Python</h3>
+                <p>Solving problems with elegant Python code for AI & data.</p>
+            </div>
+            <div class="skill animated-card">
+                <i class="fab fa-cuttlefish skill-icon animated-icon"></i>
+                <h3>C</h3>
+                <p>Strong knowledge of C programming for low-level system tasks.</p>
+            </div>
+            <div class="skill animated-card">
+                <i class="fab fa-cuttlefish skill-icon animated-icon"></i>
+                <h3>C++</h3>
+                <p>Proficient in C++ for object-oriented programming and application development.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="projects-header">
+        <h1>Engineer’s Playground</h1>
+        <p>Explore my journey through web development, AI, and innovation!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="project">
+        <!-- Amazon Clone -->
+        <div class="project-card">
+            <img src="amazon.png" alt="Amazon Clone">
+            <h2>Amazon Clone Website</h2>
+            <p class="tagline">E-commerce Simplified</p>
+            <div class="info">
+                <p><strong>Role:</strong> Front End Developer</p>
+                <p><strong>Tools:</strong> HTML, CSS</p>
+                <p>Developed an Amazon clone with product listings, responsive design, and basic e-commerce functionality.</p>
+            </div>
+            <div class="links">
+                <a href="https://cloneforamzon.netlify.app" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/tusharchauhan89/amazon-website" target="_blank" class="btn-alt">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Nova AI -->
+        <div class="project-card">
+            <img src="aii.jpeg" alt="Nova AI">
+            <h2>Nova: AI Voice Assistant</h2>
+            <p class="tagline">Voice-Powered AI</p>
+            <div class="info">
+                <p><strong>Role:</strong> Programmer</p>
+                <p><strong>Tools:</strong> Python</p>
+                <p>Nova is a voice-activated assistant that responds to verbal queries for tasks like research and reporting.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/tusharchauhan89/Nova-AI-Voice-Assistant" target="_blank" class="btn-alt">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Room Scout -->
+        <div class="project-card">
+            <img src="room.jpeg" alt="Room Scout">
+            <h2>Room Scout</h2>
+            <p class="tagline">Find Your Space</p>
+            <div class="info">
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Tools:</strong> React.js, Tailwind CSS, MongoDB</p>
+                <p>Room Scout simplifies finding accommodations for students, connecting users with PG services.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/tusharchauhan89/room-scout" target="_blank" class="btn-alt">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Tic-Tac-Toe -->
+        <div class="project-card">
+            <img src="ttt.jpeg" alt="Tic-Tac-Toe">
+            <h2>Tic-Tac-Toe Game</h2>
+            <p class="tagline">Classic Game Reimagined</p>
+            <div class="info">
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Tools:</strong> JavaScript, HTML, CSS</p>
+                <p>A modern take on the classic Tic-Tac-Toe game with a Person vs. Computer mode. Challenge the AI in an exciting game of Tic-Tac-Toe!.</p>
+            </div>
+            <div class="links">
+                <a href="https://tuyaterixkatejdimaagwalacomp.netlify.app" target="_blank" class="btn">Wanna Play</a>
+                <a href="https://github.com/tusharchauhan89/GAME-WITH-JS" target="_blank" class="btn-alt">Source code</a>
+            </div>
+        </div>
+        <!-- Quotify-AI -->
+        <div class="project-card">
+            <img src="email.png.webp" alt="Quotify-AI">
+            <h2>Quotify-AI Scheduler</h2>
+            <p class="tagline">Your Daily Dose of Inspiration</p>
+            <div class="info">
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Tools:</strong> Python</p>
+                <p>Automated email scheduler delivering daily quotes using Flask, threading, and cloud deployment.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/tusharchauhan89/Quotify.git" target="_blank" class="btn-alt">GitHub</a>
+            </div>
+        </div>
+        <!-- ai system monitor-->
+        <div class="project-card">
+            <img src="ai.webp" alt="AI System Monitor">
+            <h2>AI SYSTEM MONITOR</h2>
+            <p class="tagline">Intelligent Monitoring for System Efficiency</p>
+            <div class="info">
+                <p><strong>Role:</strong> Designer & Developer</p>
+                <p><strong>Tools:</strong> Python, APIs, Machine Learning, Flask</p>
+                <p>An advanced monitoring tool that tracks and visualizes system performance metrics like CPU usage, memory usage, and real-time analytics with AI-driven insights.</p>
+            </div>
+            <div class="links">
+                <a href=" https://github.com/tusharchauhan89/ai-system-monitor.git" target="_blank" class="btn-alt">View on GitHub</a>
+            </div>
+        </div>
+
+    </section>
+    <div>
+        <section id="contact me">
+            <section class="contact">
+                <div class="content">
+                    <h2>[CTRL] ➡️ Connect</h2>
+
+                </div>
+
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Parwanoo,<br>Himachal Pradesh,<br>India</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+91-7018888714</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>tusharchauhan9625@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form>
+                            <h2>Have something to say? I’d love to hear!</h2>
+                            <div class="input-Box">
+                                <input type="text" name="full_name" required>
+                                <span>Full Name</span>
+                            </div>
+                            <div class="input-Box">
+                                <input type="email" name="email" required>
+                                <span>Email</span>
+                            </div>
+                            <div class="input-Box">
+                                <textarea name="message" required></textarea>
+                                <span>Your thoughts matter, share them!</span>
+                            </div>
+                            <div class="input-Box">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("8BgZO8Y275y9O_01n"); // Replace with your new EmailJS public key
+        })();
+
+        // Form submission handler
+        document.querySelector(".contactForm form").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+
+            // Send email using EmailJS's sendForm method
+            emailjs.sendForm("service_9ddto3o", "template_zihlqi1", this)
+                .then(function(response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("Your message has been sent successfully!");
+                    document.querySelector(".contactForm form").reset(); // Reset the form
+                }, function(error) {
+                    console.error("FAILED...", error);
+                    alert("Failed to send your message. Please try again later.");
+                });
+        });
+    </script>
+    <footer>
+        <div class="footer ">
+            <div class="footer-container ">
+                <div class="footer-section footer-brand ">
+                    <h3>Tushar Chauhan's Portfolio</h3>
+                    <p>From imagination to implementation, one line of code at a time.</p>
+                    <div class="footer-social ">
+                        <ul>
+                            <li><a href="https://www.instagram.com/_tushar.chauhan_/ " target="_blank "><i class="fa-brands fa-instagram "></i></a></li>
+                            <li><a href="https://github.com/tusharchauhan89 " target="_blank "><i class="fa-brands fa-github "></i></a></li>
+                            <li><a href="https://x.com/TUSHAR7752?t=3vTefSSrm9esuLenkgFNzQ&s=08" target="_blank "><i class="fa-brands fa-twitter "></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/tushar-chauhan-54b0ab296/ " target="_blank "><i class="fa-brands fa-linkedin "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-section footer-contact ">
+            <h4>Contact</h4>
+            <p><i class="fa fa-phone "></i> +91 7018888714</p>
+            <p><i class="fa fa-envelope "></i> tusharchauhan9625@gmail.com</p>
+            <p><i class="fa fa-map-marker "></i> Parwanoo, Himachal Pradesh, India</p>
+        </div>
+        </div>
+        <div class="footer-bottom ">
+            <p>Copyright &copy; TusharChauhansportfolio.com | All rights reserved</p>
+        </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js ">
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js "></script>
+</body>
+
+</html>
